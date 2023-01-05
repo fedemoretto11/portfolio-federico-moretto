@@ -1,0 +1,348 @@
+/* BARRA DE NAVEGACION */
+
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/* ----- ESTILOS GENERALES ----- */
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Rubik Dirt', cursive;
+
+}
+
+.seccion-oscura {
+  background-color: #1b1b32;
+  color: #fff;
+}
+
+.seccion-clara {
+  color: #000;
+  background-color: #fff;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: #000000;
+}
+.texto-blanco {
+  color: #ffffff;
+}
+
+
+
+
+/* ------------------------------------------- */
+/* SECCION HERO */
+
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+  
+}
+
+/* ABOUT ME */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+
+/* EXPERIENCIA */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+.experiencia i{
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 16px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badge {
+  margin: 5px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all .35s ease-in;
+}
+
+.experiencia .columna:hover {
+  background-color: #1b1b32;
+  color: white;
+}
+
+
+/* PROYECTOS */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+
+
+.proyectos img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyectos {
+  position: relative;
+
+
+}
+
+.proyectos:hover img {
+  opacity: 0.2;
+}
+
+.proyectos:hover .overlay {
+  opacity: 1;
+
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+
+}
+
+.overlay i {
+  color: #000000;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+
+/* CONTACTO */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+
+}
+
+.contacto .rectangulo {
+  margin-top: -3.6rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all .2s ease-in-out;
+}
+
+.contacto button i {
+  color: #ffffff;
+  font-size: 1.3rem;
+  transition: all .2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.contacto button:hover i {
+
+  color: #000000;
+}
+
+
+/* FOOTER */
+
+.footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 180px;
+  width: 180px;
+  margin: 10px;
+}
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand',sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transition: all .2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: all .2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #ffffff;
+  border: 2px solid rgb(13, 110, 253);
+}
+.iconos-redes-sociales a:hover i {
+  color: #000;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+
+
+
+
+/* ADAPTABLE (RESPONSIVO ) */
+@media screen and (max-width:400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width:700px) {
+ .hero-inferior-imagen {
+  width: 600px;
+ } 
+}
