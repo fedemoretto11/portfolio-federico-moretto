@@ -2,7 +2,7 @@
 
 .navbar {
   padding: 2rem;
-  background-color: #f5f6f7;
+  background-color: #e5e2df;
 }
 
 .navbar-collapse {
@@ -29,13 +29,13 @@ h1 {
 }
 
 .seccion-oscura {
-  background-color: #1b1b32;
-  color: #fff;
+  background-color: #122048;
+  color: #e5e2df;
 }
 
 .seccion-clara {
-  color: #000;
-  background-color: #fff;
+  color: #122048;
+  background-color: #e5e2df;
 }
 
 .seccion-titulo {
@@ -72,7 +72,7 @@ h1 {
 /* SECCION HERO */
 
 .hero {
-  background-color: #f5f6f7;
+  background-color: #e5e2df;
   min-height: 450px;
   text-align: center;
 }
@@ -89,7 +89,7 @@ h1 {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  color: #122048;
   
 }
 
@@ -113,7 +113,7 @@ h1 {
 .experiencia i{
   font-size: 2.5rem;
   color: #7ade30;
-  background-color: #0a0a23;
+  background-color: #122048;
   padding: 8px 16px;
   border-radius: 50%;
 }
@@ -145,7 +145,7 @@ h1 {
 
 .experiencia .columna:hover {
   background-color: #1b1b32;
-  color: white;
+  color: #e5e2df;
 }
 
 
