@@ -3,12 +3,12 @@
     <!-- METADATOS -->
     <meta charset="utf-8">
     <meta name="author" content="Federico Moretto">
-    <meta name="description" content="Calculadora con javascript">
-    <meta name="keywords" content="calcualdora javascript js html css">
+    <meta name="description" content="Calculadora con javascript. Este proyecto es el primero creado por mi para mi Portfolio personal, el comienzo de un hermoso camino, mi primer programacion propia">
+    <meta name="keywords" content="calcualdora, javascript, js, html, css, primer proyecto, Portfolio, web developer, design, front-end, frontend, front end">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- TITULO  E ICONO-->
-    <title>Calculadora con JS</title>
+    <title>Calculadora con JavaScript || Primer Proyecto</title>
     <link rel="icon" href="">    
 
     <!-- CSS -->
@@ -19,6 +19,8 @@
 
     <!-- JAVASCRIPT -->
     <script src="script.js" type="text/javascript" defer></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="Display.js" type="text/javascript"></script>
 
 </head>
 
@@ -26,10 +28,10 @@
 <body>
   <div class="calculadora">
     <div class="display">
-      <div class="valor-anterior">
+      <div class="valor-anterior" id="displayValorAnterior">
         
       </div>
-      <div class="valor-actual">
+      <div class="valor-actual" id="displayValorActual">
         
       </div>
     </div>
@@ -37,12 +39,12 @@
     <div class="botones">
       <button class="button clear">C</button>
       <button class="button borrar">&larr;</button>
-      <button class="button porcentaje">^</button>
+      <!-- <button class="button porcentaje">j</button> -->
       <button class="button operadores" value="dividir">/</button>
       <button class="button numeros">7</button>
       <button class="button numeros">8</button>
       <button class="button numeros">9</button>
-      <button class="button operadores" value="multiplicar">*</button>
+      <button class="button operadores" value="multiplicar">x</button>
       <button class="button numeros">4</button>
       <button class="button numeros">5</button>
       <button class="button numeros">6</button>
@@ -54,7 +56,7 @@
       <button class="button numeros">00</button>
       <button class="button numeros">0</button>
       <button class="button numeros">.</button>
-      <button class="button igual" value="igual">=</button>                        
+      <button class="button operadores" id="igual" value="igual">=</button>                        
 
     </div>
   </div> 
