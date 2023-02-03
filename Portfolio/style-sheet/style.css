@@ -151,70 +151,112 @@ h1 {
 
 /* PROYECTOS */
 
-
-.proyectos-recientes {
-  padding: 40px;
+#proyectos {
+  height: 1250px;
 }
 
-
-
-.proyectos img {
-  min-height: 100px;
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-  padding: 10px;
-  border-radius: 20px;
-  display: block;
-  transition: all 0.2s ease;
+.panels {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 20px 0;
+  box-shadow: 0 0 5px #000;
   
 }
 
-.proyectos-contenedor {
-  padding-top: 60px;
-  margin-bottom: 40px;
-}
-
-.overlay {
-  transition: all .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.panel {
+  background: #6B0F9C;
+  box-shadow: 0 0 0 5px rgba(255,255,255,0.1);
+  color: #aeaeae;
   text-align: center;
-}
-
-.overlay p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.proyectos {
-  position: relative;
-
-
-}
-
-.proyectos:hover img {
-  opacity: 0.2;
-}
-
-.proyectos:hover .overlay {
-  opacity: 1;
-
-}
-
-.overlay .iconos-contenedor {
+  align-items: center;
+  transition: 
+      font-size 0.7s cubic-bezier(0.61,-0.19,0.7,10.11),
+      flex 0.7s cubic-bezier(0.61,-0.19,0.7,10.11),
+      background 0.2s;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
   display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.panel1 {
+  background-image: url("../imagenes/drum-kit.jpg");
+  font-size: 50px;
+  color: #F1EE0F;
+  text-shadow: 0 0 10px #000;;
+}
+.panel1 .bi {
+  color: #F1EE0F;
+}
+.panel2 {
+  background-image: url("../imagenes/reloj.jpg");
+  font-size: 50px;
+  color: #f00;
+  text-shadow: 0 0 10px #000;;
+}
+.panel2 .bi {
+  color: #f00;
+}
+.panel3 {
+  background-image: url("../imagenes/calculadora.jpg");
+  font-size: 50px;
+  color: #0100f3;
+  text-shadow: 0 0 10px #000;;
+}
+.panel3 .bi {
+  color: #0100f3;
+}
+.panel4 {
+  background-image: url("../imagenes/desarrollo.jpg");
+}
+.panel5 {
+  background-image: url("../imagenes/desarrollo.jpg");
+}
+
+
+
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.overlay i {
-  color: #000000;
+.panel.open {
+  flex: 5;
+  font-size: 45px;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+.panel.active > *:first-child {
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.panel.active > *:last-child {
+  transform: translateY(0);
+}
+
+.bi {
   font-size: 60px;
-  margin: 10px;
+  padding: 30px;
 }
 
 
