@@ -217,7 +217,13 @@ h1 {
   color: #0100f3;
 }
 .panel4 {
-  background-image: url("../imagenes/desarrollo.jpg");
+  background-image: url("../imagenes/pajaro_alexpama.jpg");
+  font-size: 50px;
+  color: #E4498D;
+  text-shadow: 0 0 10px #000;;
+}
+.panel4 .bi {
+  color: #E4498D;
 }
 .panel5 {
   background-image: url("../imagenes/desarrollo.jpg");
